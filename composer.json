@@ -14,7 +14,7 @@
 	"require":
 	{
 		"gears/di": "*",
-		"jakoch/phantomjs-installer": "1.9.8"
+		"jakoch/phantomjs-installer": "*"
 	},
 	"require-dev":
 	{
