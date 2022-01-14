@@ -14,17 +14,11 @@
 	"require":
 	{
 		"gears/di": "*",
-		"jakoch/phantomjs-installer": "*"
 	},
 	"require-dev":
 	{
 		"sgh/pdfbox": "dev-master",
 		"google/apiclient": "*"
-	},
-	"scripts":
-	{
-		"post-install-cmd": ["PhantomInstaller\\Installer::installPhantomJS"],
-		"post-update-cmd": ["PhantomInstaller\\Installer::installPhantomJS"]
 	},
 	"suggest":
 	{
