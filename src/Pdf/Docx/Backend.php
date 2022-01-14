@@ -490,6 +490,7 @@ class Backend extends Container implements BackendInterface
 	 */
 	protected function writeDocx()
 	{
+		$this->zip->open($this->template);
 		// Write the headers
 		foreach ($this->headerXMLs as $index => $headerXML)
 		{
