@@ -15,15 +15,15 @@
 	{
 		"gears/di": "*",
 		"gears/string": "^0.6.0",
-		"symfony/process": "2.*",
-		"symfony/filesystem": "2.*",
+		"symfony/process": "^5.1.4",
+		"symfony/filesystem": "^5.1.4",
 		"jakoch/phantomjs-installer": "1.9.8"
 	},
 	"require-dev":
 	{
 		"codegyre/robo": "*",
-		"phpunit/phpunit": "4.*",
-		"guzzlehttp/guzzle": "4.*",
+		"phpunit/phpunit": "^8.5.19|^9.5.8",
+		"guzzlehttp/guzzle": "^6.5.5|^7.0.1",
 		"sgh/pdfbox": "dev-master",
 		"google/apiclient": "1.*",
 		"symfony/finder": "2.*"
