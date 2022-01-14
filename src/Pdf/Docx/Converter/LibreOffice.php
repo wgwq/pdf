@@ -78,7 +78,7 @@ class LibreOffice extends Container implements DocxConverter
 
 		$this->process = $this->protect(function($cmd)
 		{
-			return new Process(explode(' ', $cmd));
+			return \Symfony\Component\Process\Process::fromShellCommandline($cmd);
 		});
 	}
 
