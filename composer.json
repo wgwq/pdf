@@ -13,7 +13,7 @@
 	},
 	"require":
 	{
-		"gears/di": "*",
+		"gears/di": "*"
 	},
 	"require-dev":
 	{
