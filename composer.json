@@ -28,7 +28,6 @@
 		"google/apiclient": "1.*",
 		"symfony/finder": ">=2.*"
 	},
-	"scrip
 	"require-dev":
 	{
 		"codegyre/robo": "*",
