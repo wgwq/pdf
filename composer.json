@@ -20,7 +20,7 @@
 	"require-dev":
 	{
 		"sgh/pdfbox": "dev-master",
-		"google/apiclient": "*",
+		"google/apiclient": "*"
 	},
 	"scripts":
 	{
