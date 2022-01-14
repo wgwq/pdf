@@ -15,18 +15,12 @@
 	{
 		"gears/di": "*",
 		"gears/string": "^0.6.0",
-		"symfony/process": "*",
-		"symfony/filesystem": "*",
 		"jakoch/phantomjs-installer": "1.9.8"
 	},
 	"require-dev":
 	{
-		"codegyre/robo": "*",
-		"phpunit/phpunit": "*",
-		"guzzlehttp/guzzle": "*",
 		"sgh/pdfbox": "dev-master",
 		"google/apiclient": "*",
-		"symfony/finder": "*"
 	},
 	"scripts":
 	{
