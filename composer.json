@@ -14,7 +14,6 @@
 	"require":
 	{
 		"gears/di": "*",
-		"gears/string": "dev-master",
 		"jakoch/phantomjs-installer": "1.9.8"
 	},
 	"require-dev":
@@ -22,12 +21,6 @@
 		"sgh/pdfbox": "dev-master",
 		"google/apiclient": "*"
 	},
-	"repositories": [
-		{
-		    "type": "vcs",
-		    "url": "https://github.com/wgwq/string"
-		}
-	],
 	"scripts":
 	{
 		"post-install-cmd": ["PhantomInstaller\\Installer::installPhantomJS"],
