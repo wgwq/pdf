@@ -70,11 +70,11 @@ class LibreOffice extends Container implements DocxConverter
 	 */
 	protected function setDefaults()
 	{
-		$this->binary = config('PDF_LIBREOFFICE_PATH', '/usr/bin/libreoffice');
+		$this->binary = config('services.pdf.bin_path', '/usr/bin/libreoffice');
 
-		$this->profile = config('PDF_PROFILE_DIR', '/tmp/gears-pdf-libreoffice');
+		$this->profile = config('services.pdf.profile_path', '/tmp/gears-pdf-libreoffice');
 
-		$this->output = config('PDF_GENERATED_DIR', '/tmp/gears-pdf-libreoffice/generated');
+		$this->output = config('services.pdf.generated_path', '/tmp/gears-pdf-libreoffice/generated');
 
 		$this->process = $this->protect(function($cmd)
 		{
