@@ -24,7 +24,7 @@ class TempFile extends NativeSplFileInfo
 	 */
 	public function __construct($prefix = null, $ext = null)
 	{
-		if (($temp = tempnam(sys_get_temp_dir(), $prefix)) === false)
+		if (($temp = tempnam(storage_path('app/').'private/tmp_docx', $prefix)) === false)
 		{
 			throw new RuntimeException
 			(
