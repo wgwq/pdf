@@ -2,3 +2,4 @@ tests/output/*
 !tests/output/.gitkeep
 vendor
 composer.lock
+.idea

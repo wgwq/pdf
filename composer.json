@@ -13,7 +13,9 @@
 	},
 	"require":
 	{
-		"gears/di": "*"
+		"ext-zip": "*",
+		"gears/di": "*",
+		"symfony/process": "*"
 	},
 	"require-dev":
 	{

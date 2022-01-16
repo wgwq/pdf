@@ -13,17 +13,16 @@
 
 use ZipArchive;
 use RuntimeException;
-use Gears\String as Str;
+use Illuminate\Support\Str;
 use Gears\Di\Container;
 use Gears\Pdf\TempFile;
-use Gears\Pdf\Docx\SimpleXMLElement;
-use Gears\Pdf\Docx\Converter\LibreOffice;
+use Gears\Pdf\Docx\Converter\Unoconv;
 use Gears\Pdf\Contracts\Backend as BackendInterface;
 
 class Backend extends Container implements BackendInterface
 {
 	/**
-	 * @var Gears\Pdf\TempFile DOCX document to use as the template for our PDF.
+	 * @var TempFile DOCX documents to use as the template for our PDF.
 	 *                         Set as the first argument of the constructor of
 	 *                         this class.
 	 */
@@ -83,7 +82,7 @@ class Backend extends Container implements BackendInterface
 
 		$this->converter = function()
 		{
-			return new LibreOffice();
+			return new Unoconv();
 		};
 	}
 
