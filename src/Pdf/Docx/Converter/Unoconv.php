@@ -61,7 +61,7 @@ class Unoconv extends Container implements DocxConverter
 	{
 		$this->binary = '/usr/bin/unoconv';
 
-		$this->profile = '/tmp/gears-pdf-unoconv';
+        $this->profile = config('services.pdf.profile_path', '/tmp/gears-pdf-libreoffice');
 
 		$this->process = $this->protect(function($cmd)
 		{
